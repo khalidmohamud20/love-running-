@@ -26,6 +26,9 @@ body {
 header {
     background-color: rgb(255, 81, 0);
 }
+h1{
+    font-family: 'Oswald',sans-serif
+}
 
 /* Main content */
 main {
