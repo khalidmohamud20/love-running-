@@ -86,8 +86,19 @@ main {
 }
 
 /* Footer */
-footer {
-    background-color: rgb(135, 28, 235);
+
+#social-networks {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px; 
+    list-style: none; 
+    padding: 20px 0;
+}
+
+#social-networks i {
+    font-size: 160%;
+    padding: 5%;
+    color: #3a3a3a;
 }
 
 /* Media query: tablets and larger (768px and up) */
