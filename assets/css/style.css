@@ -21,6 +21,13 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
+h1, h2, h3 {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #252525;
+}
+
 /* Header */
 header {
     background-color: #ffffff;
@@ -37,12 +44,7 @@ header a {
     text-decoration: none;
     color: inherit;
 }
-h1 {
-    font-family: 'Oswald', sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: #252525;
-}
+
 #menu {
     font-size: 110%;
     letter-spacing: 4px;
@@ -79,18 +81,42 @@ nav {
 
 /* Main content */
 main {
-    background-color: rgb(9, 225, 215);
-    /* Make main element take up any surplus space to push footer down */
+    /*make main element take up any surplus space to push footer down */
     flex: 1 0 auto;
     margin-top: 47px;
+}
+
+/*Hero section*/
+
+#hero {
+    height: 700px;
+    width: 100%;
+    background: url("../images/hero-image.webp") no-repeat center center / cover;
+    position: relative;
+}
+
+#cover-text {
+    background-color: rgba(241, 109, 107, .7);
+    font-size: 130%;
+    position: absolute;
+    bottom: 30px;
+    width: 80%;
+    min-height: 200px;
+    padding-top: 40px;
+    padding-left: 10px;
+}
+
+#cover-text > h2,
+#cover-text > h3 {
+    color: #ffffff;
 }
 
 /* Footer */
 
 #social-networks {
+    text-align: center;
     display: flex;
-    justify-content: space-evenly;
-    gap: 20px; 
+    justify-content: space-evenly;  
     list-style: none; 
     padding: 20px 0;
 }
@@ -103,7 +129,6 @@ main {
 
 /* Media query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
-    /* Header */
     nav {
         display: block;
         position: relative;
@@ -130,16 +155,20 @@ main {
         margin: 0 0.5rem;
     }
 
-    /* Main content */
     main {
-        /* push main content down to accommodate larger header */
         margin-top: 79px;
     }
 
-    /* Large devices (laptops and desktops 992px and up) */
-    @media screen and (min-width: 992px) {
-        #menu a:hover {
-            border-bottom: 1px solid #3a3a3a;
-        }
+    #cover-text {
+        width: 300px;
+        right: 50px;
+        text-align: right;
     }
 }
+
+@media screen and (min-width: 992px) {
+    #menu a:hover {
+        border-bottom: 1px solid #3a3a3a;
+    }
+}
+
