@@ -153,6 +153,24 @@ main {
     margin: 5px 0;
 }
 
+#circle-cover-bg {
+    background: url('../images/reasons-image.webp') no-repeat top center;
+    height: 90vw;
+    width: 90vw;
+    margin-bottom: 20px;
+    /* Make the square image circle */
+    border-radius: 50%;
+    max-width: 300px;
+    max-height: 300px;
+}
+#benefits-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+
 
 /* Media query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
