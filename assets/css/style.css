@@ -127,6 +127,33 @@ main {
     color: #3a3a3a;
 }
 
+#reasons {
+    padding: 0 20px 40px 20px;
+}
+
+#reasons h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+#benefits-physical > div,
+#benefits-mental > div {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+#benefits p {
+    padding: 0 20px;
+}
+
+#benefits hr {
+    border: none;
+    border-top: 1px solid #333;
+    margin: 5px 0;
+}
+
+
 /* Media query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
     nav {
