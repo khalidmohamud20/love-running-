@@ -232,7 +232,7 @@ main {
 
 /* Form container */
 #signup-form {
-    background-color: rgba(0, 0, 0, 0.65); /* More subtle transparency */
+    background-color: rgba(0, 0, 0, 0.4); /* Slight transparency */
     color: white;
     padding: 30px;
     border-radius: 5px;
@@ -410,4 +410,4 @@ main {
     #benefits-physical > div {
         align-self: flex-end;
     }
-}
+}  
