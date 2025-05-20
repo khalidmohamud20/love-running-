@@ -218,6 +218,94 @@ main {
         column-gap: 0;
     }
 }
+/* ---------- Signup Page Styling ---------- */
+
+/* Part 1: Mobile-first styles */
+main {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Signup section background */
+#signup {
+    background-image: url('../images/signup-image.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px;
+    flex-grow: 1;
+    position: relative;
+}
+
+/* Form container */
+#signup-form {
+    background-color: rgba(0, 0, 0, 0.85);
+    color: white;
+    padding: 30px;
+    border-radius: 5px;
+}
+
+/* Heading in the form */
+#signup-form h2 {
+    color: #ff3366;
+    margin-bottom: 20px;
+}
+
+/* Text input fields */
+.text-input {
+    background-color: white;
+    color: black;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+/* Radio button layout */
+.radio-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+/* Submit button */
+.join-button {
+    background-color: #ff3366;
+    color: white;
+    border: none;
+    border-radius: 2px;
+    font-size: 100%;
+    padding: 10px 15px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+/* Part 2: Responsive styles (tablet and up) */
+@media screen and (min-width: 768px) {
+    #signup {
+        background-position: center;
+    }
+
+    #signup-form {
+        max-width: 400px;
+        position: absolute;
+        top: 150px;
+        left: 10%;
+    }
+
+    /* Hover feedback */
+    .text-input:hover {
+        background-color: #f0f0f0;
+    }
+
+    .join-button:hover {
+        background-color: #e62e5c;
+    }
+}
 
 /* Media query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
